@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>PHP-BADWORDS</title>
+
+    <title>BAD WORDS</title>
   </head>
   <body>
     <h1>Censura con *** la parola che non ti piace:</h1>
    
-        <form action="censura.php" class="contents">
-            <textarea name="paragraph" id="" cols="30" rows="10" placeholder="Inserisci il tuo testo" ></textarea>
+        <form action="censura.php" class="contents" method="get">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Inserisci il tuo testo" ></textarea>
+
             <input
               type="text"
               name="word"
+              id="word"
               placeholder="qual è la parola da censurare?"
             />
             <button type="submit">CENSURA</button>
             <button type="reset">Reset</button>
         </form>
-    
     
     
   </body>
